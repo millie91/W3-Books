@@ -24,6 +24,22 @@
 	<p>Images often take longer to load than the HTML code that makes up the rest of the page. It is, therefore, a good idea to specify the size of the image so that the browser can render the rest of the text on the page while leaving the right amount of space for the image that is still loading.</p>
 	<h4>Example</h4>
 	<img src="images/cat.jpg" alt="A cat" title="This cat is very cute" height="200" width="200">
+	<li><b>STYLE</b></li>
+	<p>You can use the style attribute to specify the width and height of an image.</p>
+	<p>The values are specified in pixels (use px after the value):</p>
+	<img src="images/cat.jpg" alt="Stylish cat" style="width:128px;height:128px;">
+	<p>Both the width, height, and style attributes are valid in HTML5.</p>
+	<p>However, we suggest using the style attribute. It prevents internal or external styles sheets from changing the original size of images:</p>
+	<img src="images/cat.jpg" alt="Stylish cat" style="width:128px;height:128px;">
+	<img src="images/cat.jpg" alt="NonStylish cat" width="128" height="128">
+	<li><b>ANIMATED IMAGES</b></li>
+	<p>The GIF standard allows animated images:</p>
+	<img src="images/programming.gif" alt="Computer Man" style="width:280px;height:200px;">
+	<li><b>USING AN IMAGE AS A LINK</b></li>
+	<p> To use an image as a link, simply nest the (img) tag inside the (a) tag:</p>
+	<a href="default.asp">
+  	<img src="images/programming.gif" alt="HTML tutorial" style="width:200px;height:150px;border:0;">
+</a>
 </ul>
 
 <br>
@@ -48,5 +64,203 @@
 <p>There are around 10,000 living species of birds that inhabit different ecosystems from the Actic to the Antarctic.
 <img src="images/bird.jpg" alt="Bird" width="250" height="200" />Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
 
+<hr /><br>
+
+<p>Where you place the image in the code is important because browsers show HTML Elements in one of two ways:</p>
+<ol>
+	<li><b>BLOCK ELEMENTS ALWAYS APPEAR ON A NEW LINE</b></li>
+	<p>Examples of block elements include the (h1) and (p) elements</p>
+	<p>If the (img) is followed by a block level element (such as a paragraph) then the block level element will sit on a new line after the image as shown in the first example on this page</p>
+	<li><b>INLINE ELEMENTS SIT WITHIN A BLOCK LEVEL ELEMENT AND DO NOT START ON A NEW LINE</b></li>
+	<p>Examples of inline elements include the (b), (em), and (img) elements.</p>
+	<p>If the (img) element is inside a block level element, any text or other inline elements, any text or other inline elements will flow around the image, as shown in the second and third examples on this page.</p>
+</ol>
+
+<h3><i>OLD CODE: </i> Aligning Images Horizontally</h3>
+<ul>
+	<li><b>ALIGN</b></li>
+	<p>The (align) attribute was commonly used to indicate how the other parts of a page should flow around an image. <i>It has been removed from HTML5 and new websites should use CSS to control the alignment of images.</i></p>
+	<p>I have discussed it here because you are likely to come across it if you look at older code, and because some visual editors still insert this attribute when you indicate how an image should be aligned.</p>
+	<p>The align attribute can take these horizontal values: </p>
+	<ul>
+		<li><b>LEFT</b></li>
+		<p>This aligns the image to the left (allowing text to flow around its right-hand side)</p>
+		<li><b>RIGHT</b></li>
+		<p>This aligns the image to the right (allowing text to flow around its left-hand side)</p>
+	</ul>
+</ul>
+<h4>Examples</h4>
+<hr />
+<p><img src="images/bird.jpg" alt="Bird" width="100" height="100" align="left" /> There are around 10,000 living species of birds that inhabit different ecosystems from the Actic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
+<br><br><br><hr />
+<p><img src="images/bird.jpg" alt="Bird" width="100" height="100" align="right" />There are around 10,000 living species of birds that inhabit different ecosystems from the Actic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
+
+<br><br><br><hr />
+
+<p>This looks a lot neater than having one line of text next to the image (as shown on the previous example)</p>
+<p>When you give the align attribute a value of left, the image is placed on the left and text flows around it</p>
+<p>When you give the (align) attribute a value of right, the image is placed on the right and the text flows around it</p>
+
+<br>
+
+<h3><i>OLD CODE: </i>Aligning Images Vertically</h3>
+<p>As you saw on the last page, the (align) attribute is no longer used in HTML5, but it is covered here becasue you may see it used in older websites and it is still used in the code created by some visual editors.</p>
+<p>There are three values that the (align) attribute can take that control how the image should align vertically with the text that surrounds it.</p>
+<ul>
+	<li><b>TOP</b></li>
+	<p>This aligns the first line of the surrounding text with the top of the image</p>
+	<p>The value of top places the first line of text near the top of the image and subsequent lines of text appear under the image.</p>
+	<h4>Example</h4>
+	<p><img src="images/bird.jpg" alt="Bird" width="200" height="150"
+	align="top" />There are around 10,000 living species of birds that inhabit different ecosystems from the Actic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
+	<li><b>MIDDLE</b></li>
+	<p>This aligns the first line of the surrounding text with the middle of the image</p>
+	<p>The value of middle places the first line of text near the vertical middle of the image and subsequent lines of text appear under the image.</p>
+	<h4>Example</h4>
+	<p><img src="images/bird.jpg" alt="Bird" width="200" height="150" align="middle" />There are around 10,000 living species of birds that inhabit different ecosystems from the Actic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
+	<li><b>BOTTOM</b></li>
+	<p>This aligns the first line of the surrounding text with the bottom of the image</p>
+	<p>The value of bottom places the first line of text near the bottom of the image and subsequent lines of text under the image.</p>
+	<h4>Example</h4>
+	<p><img src="images/bird.jpg" alt="Bird" width="200" height="150" align="bottom" />There are around 10,000 living species of birds that inhabit different ecosystems from the Actic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.</p>
+</ul>
+
+<br>
+
+<h3>Image Floating</h3>
+<p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
+<p><img src="images/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="images/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+<br>
+
+<h3>Image Maps</h3>
+<p>Use the (map) tag to define an image-map. An image-map is an image with clickable areas.</p>
+<p>The name attribute of the (map) tag is associated with the (img)'s usemap attribute and creates a relationship between the image and the map.</p>
+<p>The (map) tag contains a number of (area) tags, that defines the clickable areas in the image-map:</p>
+<img src="images/planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">	
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="https://pbs.twimg.com/profile_images/641353910561566720/VSxsyxs7.jpg" target="_blank">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="http://cdn2.hubspot.net/hub/368026/file-1901865799-jpg/planet_Mercury.jpg" target="_blank">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="http://blogs.discovermagazine.com/zenphoto/cache/extreme-solar-system/venus_595.jpg" target="_blank">
+</map>
+
+<br>
+
+<h4>Chapter Summary</h4>
+<table border="1">
+	<tr><td><b>IMG</b></td><td>Element to define an image</td> 
+	<tr><td><b>SRC</b></td><td>Attribute to define the URL of the image</td> 
+	<tr><td><b>ALT</b></td><td>Attribute to define an alternate text for an image, if it cannot be displayed</td> 
+	<tr><td><b>HTML WIDTH and HEIGHT ATTRIBUTES</b></td><td>To define the size of the image</td> 
+	<tr><td><b>CSS WIDTH and HEIGHT PROPERTIES</b></td><td>Properties to define the size of the image (alternatively)</td> 
+	<tr><td><b>CSS FLOAT</b></td><td>Property to let the image float</td> 
+	<tr><td><b>MAP</b></td><td> Element to define an image-map</td> 
+	<tr><td><b>AREA</b></td><td>Element to define the clickable areas in the image-map</td> 
+	<tr><td><b>USEMAP</b></td><td>Element usemap attribute to point to an image-map</td> 
+
+
+
+
+</table>
+
+<br>
+
+<h3><b>Three Rules For Creating Images</b></h3>
+<ol>
+	<li><b>SAVING IMAGES IN THE RIGHT FORMAT</b></li>
+	<p>Websites mainly use images in following formats: </p>
+	<ul>
+		<li>jpeg</li>
+		<li>gif</li>
+		<li>png</li>
+	</ul><br>
+	<li><b>Save Images At The Right Size</b></li>
+	<p>You should save the image at the same width and height it will appear on the website (measured in pixels).</p>
+	<p>If the image is smaller than the width and height that you have specified, the image can be distorted and stretched.</p>
+	<p>If the image is larger than the width and height you have specified, the image will take longer to display on the page.</p>
+</ol>
+
+<br>
+
+<h3><b>Tools To Edit & Save Images</b></h3>
+<p>There are several tools you can use to edit and save images to ensure that they are the right size, format and resolution.</p>
+<p>The most popular tool amongst web professionals is <b>Adobe Photoshop</b>. (In fact, professional web designers often use this software to desing entire sites.)</p>
+<p>The full version of Photoshop is expensive, but there is a cheaper version called Photoshop Elements which would suit the needs of most begineers.</p>
+<h4>OTHER SOFTWARE</h4>
+<ul>
+	<li>Adobe Fireworks</li>
+	<li>Pixelmator</li>
+	<li>PaintShop Pro</li>
+	<li>Paint.net</li>
+</ul>
+<h4>ONLINE EDITORS</h4>
+<ul>
+	<li>www.photoshop.com</li>
+	<li>www.pixlr.com</li>
+	<li>www.splashup.com</li>
+	<li>www.ipiccy.com</li>
+</ul>
+<h4>ONLINE EXTRA</h4>
+<p>Watch videos that demonstrate how to resize images and save them in correct format using both of these applications</p>
+<h4>TIPS</h4>
+<p>Whenever you have many different colours in a picture you should use a <b>JPEG</b>.</p>
+<p>A photo that features snow or an overcast sky might look like it has large areas that are just white or gray, but the picture is usually made up of many different colours that are subtly different.</p>
+<p>Use <b>GIF</b> or <b>PNG</b> format when saving images with few colours or large areas of the same colour.</p>
+<p>When a picture has an area that is filled with exactly the same colour, it is known as flat colour.</p>
+<p>Logos, illustrations and diagrams often use flat colours. (Note that photos of snow, sky or grass are not flat colours, they are made up of many subtly different shades of the same colour and are not as suited to <b>GIF</b> or <b>PNG</b> format.</p>
+
+<br>
+
+<h3>Image Dimensions</h3>
+<p>The images you use on your website should be saved at the same width and height that you want them to appear on the page.</p>
+<p>For example, if you have designed a page to include an image that is 300 pixels wide by 150 pixels tall, the image you use should be 300 x 150 pixels. You may need to use image editing tools to resize and crop the image.</p>
+<p>When sourcing images, <b>it is important</b> to understand how you can alter the dimensions of an image.</p>
+<p>Imagine that you had designed a web page to include an image that is 300 pixels wide by 150 pixels tall: </p>
+<ol>
+	<li><b>REDUCING IMAGE SIZE</b></li>
+	<p>You can reduce the size of images to create a smaller version of the image.</p>
+	<p><b>Example: </b>If your image is 600 pixels wide and 300 pixels tall, you can reduce that size of the image by 50%.</p>
+	<p><b>Result: </b>This will create an image that is quicker to download.</p>
+	<li><b>INCREASING IMAGE SIZE</b></li>
+	<p>You cannot increase the size of photos signicifantly without affecting the image quality.</p>
+	<p><b>Example: </b>If your image is only 100 pixels wide by 50 pixels tall, increasing the size by 300% would result in poor quality.</p>
+	<p><b>Result: </b>The image will look blurry or blocky.</p>
+	<li><b>CHANGING SHAPE</b></li>
+	<p>Only some images can be cropped without losing valuable information.</p>
+	<p><b>Example: </b>If your image is 300 pixels square, you can remove parts of it, but in doing so you might lose valuable information.</p>
+	<p><b>Result: </b>Only some images can be cropped and still make sense.</p>
+</ol>
+
+<br>
+
+<h3>Vector Images</h3>
+<p>Vector images differ from bitmap images and are <b>resolution-independent</b>. Vector Images are commonly created in programs such as Adobe Illustrator.</p>
+<p>Vector images are created by placing point on a grid and drawing lines between thsoe points. A colour can then be added to "fill in" the lines that have been created.</p>
+<p>The advantage of creating line drawings in vector format is that you can increase the dimensions of the image without affecting the quality of it.</p>
+
+<br>
+
+<h3>HTML5: Figure and Figure Caption</h3>
+<p><b>(figure): </b>Images often come with captions. HTML5 has introduced a new (figure) elemnt to contain images and thei caption so that the two are associated.</p>
+<p>You can have more than one image inside the (figure) element as long as they all share the same caption.</p>
+<p>Browsers sometimes indent the contents of the (figure) elemenet.</p>
+
+<br>
+<p><b>(figcaption): </b> is an element that has been added to HTML5 in order to allow web age authors to add a caption to an image.</p>
+<p>Before these elements were created there was no way to associate an (img) element with its caption.</p>
+<p>Older browsers that do not understand HTML5 elements simply ignore the new elements and display content of them.</p>
+
+<h4>Example: </h4>
+<figure>
+	<img src="images/otters.jpg" alt="Photo of group of otters floating in water" width="450" height="300" />
+	<br>
+	<figcaption>
+		Sea otters hold hands when they sleep so they don't drift away from each other
+	</figcaption>
+</figure>
 </body>
 </html>
