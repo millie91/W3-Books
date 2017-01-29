@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables</title>
+</head>
+<body>
+<h1 align="center">Tables</h1>
+<p><b>What's a table? </b>-A table represents information in a grid format.</p>
+<p>Examples of tables include financial reports, TV schedules, sport results etc.</p>
+<p>Grids allow us to understand comples data by referencing information on two axes.</p>
+<p>Each block in the grid is referred to as a <b>table cell</b>. In HTML a table is written out row by row.</p>
+
+<h3>Basic Table Structure</h3>
+<ul>
+	<li><b>TABLE: </b></li> 
+	<p>Element is used to create a table. The contents of the table are written out row by row.</p>
+	<li><b>TR: </b></li>
+	<p>You indicate the start of each row using the opening <b>(tr)</b> tag. (The <b>tr</b> stands for <b>table row</b>)</p>
+	<p>It is followed by one or more <b>(td)</b> elements (one for each cell in that row).</p>
+	<p>At the of the row you use a closing <b>(/tr)</b> tag.</p>
+	<li><b>TD: </b></li>
+	<p>Each cell of a table is represented using a <b>(td)</b> element. (The <b>td</b> stans for <b>table data</b>).</p>
+	<p>At the end of each cell you use a closing <b>(/td)</b> tag.</p>
+</ul>
+
+<h4>Example: </h4>
+<table>
+	<tr>
+		<td>15</td>
+		<td>15</td>
+		<td>30</td>
+	</tr>
+	<tr>
+		<td>45</td>
+		<td>60</td>
+		<td>45</td>
+	</tr>
+	<tr>
+		<td>60</td>
+		<td>90</td>
+		<td>90</td>
+	</tr>
+</table>
+
+<br>
+
+<h3>Table Headings</h3>
+<ul>
+	<li><b>TH: </b></li>
+	<p>Is an element that is used just like <b>(td)</b> element but its purpose is to represent the heading for either a column or a row. (The <b>th</b> stands for <b>table heading</b>).</p>
+	<p>Even if a cell has no content, you should still use a <b>(td)</b> or <b>(th)</b> element to represent the presence of an empty cell otherwise the table will not render correctly (The first cell in the first row of this example shows an empty cell).</p>
+	<p>Using <b>(th)</b>elements for headings helps people who use screen readers, imporves the ability for search engines to index your pages, and also gives you greater control over the appearance of tables when you start to use CSS.</p>
+	<p>You can use the scope attribute on the <b>(th)</b> element to indicate whether it is a heading for a column or a row. It can take the values row to indicate a heading for a row or col to indicate a heading for a column.</p>
+	<p>Browsers usually display the content of a <b>(th)</b> element in bold and in the middle of the cell.</p>
+</ul>
+<br>
+<table align="center">
+	<tr>
+		<th style="background-color: black"></th>
+		<th scope="col" style="border: solid;">Saturday</th>
+		<th scope="col" style="border: solid;">Sunday</th>
+	</tr>
+	<tr>
+		<th scope="row" style="border: solid;">Tickets sold:</th>
+		<td align="center"><b><i>120</i></b></td>
+		<td align="center"><b><i>135</i></b></td>
+	</tr>
+	<tr>
+		<th scope="row" style="border: solid;">Total sales:</th>
+		<td align="center"><b>£600</b></td>
+		<td align="center"><b>£675</b></td>
+	</tr>
+</table>
+<br>
+
+<h3>Spanning Columns</h3>
+<p>Sometimes you may need the entries in a table to stretch across more than one column.</p>
+<p>The <b>colspan</b> attribute can be used on a <b>(th)</b> or <b>(td)</b> element and indicates how many columns that cell should run across.</p>
+<p>In the following example on the right you can see a timetable with five columns; the first column contains the heading for that row (the day), the remaining four represent one hour time slots.</p>
+<p>If you look at the table cell that contains words "Geography" you will see that the value of the <b>colspan</b> attribute is 2, which indicates that the cell should run across two columns. In the third row, "Gym" runs across three columns.</p>
+<p>You can see that the second and third rows have fewer <b>td</b> elements than there are columns. This is because, when a cell extends across more than one column, the <b>(td)</b> or <b>(th)</b> cells that would have been in the place of the wider cells are not included in the code.</p>
+<br>
+<h4 align="center">Example: </h4>
+<table align="center" style="border: solid;">
+	<tr>
+		<th style="background-color: #000;"></th>
+		<th style="background-color: #999; border: solid 1px;">9am</th>
+		<th style="background-color: #999; border: solid 1px;">10am</th>
+		<th style="background-color: #999; border: solid 1px;">11am</th>
+		<th style="background-color: #999; border: solid 1px;">12pm</th>
+	</tr>
+	<tr>
+		<th style="border: solid 1px;">Monday</th>
+		<td align="center" colspan="2" style="border: solid 1px;">Geography</td>
+		<td align="center" style="border: solid 1px;">Math</td>
+		<td align="center" style="border: solid 1px;">Art</td>
+	</tr>
+	<tr>
+		<th style="border: solid 1px;">Tuesday</th>
+		<td align="center" colspan="3" style="border: solid 1px;">Gym</td>
+		<td align="center" style="border: solid 1px;">Home Ec</td>
+	</tr>
+</table>
+<br>
+
+<h3>Spanning Grows</h3>
+<p>You may also need entries in a table to stretch down across more than one row.</p>
+<p>The <b>rowspan</b> attribute can be used on a <b>(th)</b> or <b>(td)</b> element to indicate how many rows a cell should span down the table.</p>
+<p>In the following example you can see that ABC is showing a movie from 6pm-8pm, whereas the BBC and CNN channels are both showing two programs during this time period (each of which lasts one hour).</p>
+<p>If you look at the last <b>(tr)</b> element, it only contains three elements even though there are four columns in the result below.</p>
+<p>This is because the movie in the <b>(tr)</b> element above it uses the <b>rowspan</b> attribute to stretch down and take over the cell below.</p>
+
+<h4 align="center">Example:</h4>
+<table align="center">
+	<tr>
+		<th style="background-color: #000;"></th>
+		<th style="background-color: #999; border: solid 1px;">ABC</th>
+		<th style="background-color: #999; border: solid 1px;">BBC</th>
+		<th style="background-color: #999; border: solid 1px;">CNN</th>
+	</tr>
+	<tr>
+		<th style="border: solid 1px;">6pm-7pm</th>
+		<td align="center" rowspan="2" style="border: solid 1px;">Movie</td>
+		<td align="center" style="border: solid 1px;">Comedy</td>
+		<td align="center" style="border: solid 1px;">News</td>
+	</tr>
+	<tr>
+		<th style="border: solid 1px;">7pm-8pm</th>
+		<td align="center" style="border: solid 1px;">Sport</td>
+		<td align="center" style="border: solid 1px;">Current Affairs</td>
+	</tr>
+</table>
+<br>
+<h3>Long Tables</h3>
+<p>These are three elements that help distinguish between the main content of the table and the first and last rows (which can containt different content).</p>
+<p>These elements help people who use screen readers and also allow you to style these sections in a different manner than the rest of the table (as you will see when you learn about CSS).</p>
+<ul>
+	<li><b>THEAD: </b></li>
+	<p>The headings of the table should sit inside the <b>(thead)</b> element.</p>
+	<li><b>TBODY: </b></li>
+	<p>The body should sit inside the <b>(tbody)</b> element.</p>
+	<li><b>TFOOT: </b></li>
+	<p>The footer belongs inside the <b>(tfoot)</b> element.</p>
+	<p>By default, browsers rarely treat the content of these elements any differently from other elements, however designers often use CSS styles to change their appearance.</p>
+</ul>
+<br>
+<h4 align="center">Example: </h4>
+<table align="center" border="2" bgcolor="#efefef">
+	<thead>
+		<tr>
+			<th style="background-color: gold; border: solid;">Date</th>
+			<th style="background-color: gold; border: solid;">Income</th>
+			<th style="background-color: gold; border: solid;">Expenditure</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th style="border: solid 1px;">1<sup>st</sup> January</th>
+			<td align="center" style="border: solid 1px;">250</td>
+			<td align="center" style="border: solid 1px;">36</td>
+		</tr>
+		<tr>
+			<th style="border: solid 1px;">2<sup>nd</sup> January</th>
+			<td align="center" style="border: solid 1px;">285</td>
+			<td align="center" style="border: solid 1px;">48</td>
+		</tr>
+		<!-- additional rows as above -->
+		<tr>
+			<th align="center" style="border: solid 1px;">31<sup>st</sup> January</th>
+			<td align="center" style="border: solid 1px;">129</td>
+			<td align="center" style="border: solid 1px;">64</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td style="background-color: #000"></td>
+			<td align="center" style="border: 1px solid;"><b><i>7824</i></b></td>
+			<td align="center" style="border: 1px solid;"><b><i>1241</i></b></td>
+		</tr>
+	</tfoot>
+</table>
+<br>
+
+<h3>HTML Table - Adding A Caption</h3>
+<p>To add a caption to a table, use the <b>(caption)</b> tag:</p>
+<table style="width:100%" border="1px solid black">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<br>
+
+<h3><i>Old Code: </i>Width and Spacing</h3>
+<p>There are some outdated attributes which you should not use on new websites. You may, however, come across some of them when looking at older code, so I will mention them here. <em>All of these attributes have been replaced by the use of CSS.</em></p>
+<p>The <b>width</b> attribute was used on the opening <b>(table)</b> tag to indicate how wide that table should be and on some opening <b>(th)</b> and <b>(td)</b> tags to specify the width of individual cells. The value of this attribute is the width of the table or cell in pixels.</p>
+<p>The columns in a table need to form a straight line, so you often only see the <b>width</b> attribute on the first row (and all subsequent rows would use that setting).</p>
+<p>The openin <b>table</b> tag could also use the <b>cellpadding</b> attribute to add space inside each cell of the table and the <b>cellspacing</b>attribute to create space between each cell of the table. The values for these attributes were given in pixels.</p>
+<br>
+<h4 align="center">Example: </h4>
+<table align="center" width="400" cellpadding="10" cellspacing="5" border="1" style="border: 1px solid black;">
+	<tr style="background-color: gold">
+		<th style="background-color: black;" width="150"></th>
+		<th>Withdrawn</th>
+		<th>Credit</th>
+		<th width="150">Balance</th>
+	</tr>
+	<tr align="center">
+		<th style="background-color: gold;">January</th>
+		<td>250.00</td>
+		<td>660.50</td>
+		<td>410.50</td>
+	</tr>
+	<tr align="center">
+		<th style="background-color: gold;">February</th>
+		<td>135.55</td>
+		<td>895.20</td>
+		<td>1170.15</td>
+	</tr>
+</table>
+<br>
+
+<h3><em>Old Code: </em>Border and Background</h3>
+<p>The <b>(border)</b> attribute was used on both the <b>(table)</b> and <b>(td)</b> elements to indicate the width of the border in pixels.</p>
+<p>The <b>(bgcolor)</b> attribute was used to indicate background colours of either the entire table or individual table cells. The value is usually a hex code.</p>
+<p>This example uses the HTML <b>(border)</b> and <b>(bgcolor)</b> attributes. No CSS attributes were utilized in this example.</p>
+<p>When building a new website you should use CSS to control the appearance of the table rather than these attributes. <b>They are only covered here because you may come across them if you look at the code of older websites.</b></p>
+<br>
+<h4 align="center">Example: </h4>
+<table align="center" border="2" bgcolor="#efefef">
+	<tr>
+		<th width="150"></th>
+		<th>Withdrawn</th>
+		<th>Credit</th>
+		<th width="150" bgcolor="#cccccc">Balance</th>
+	</tr>
+	<tr>
+		<th>January</th>
+		<td>250.00</td>
+		<td>660.50</td>
+		<td bgcolor="#cccccc">410.50</td>
+	</tr>
+	<tr>
+		<th>February</th>
+		<td>135.55</td>
+		<td>895.20</td>
+		<td bgcolor="#cccccc">1170.15</td>
+	</tr>
+</table>
+
+</body>
+</html>
