@@ -6,12 +6,78 @@
 <body>
 <h1 align="center">My Grocery List</h1>
 <h3>Ordered List</h3>
+<p>An ordered list starts with the <b>(ol)</b> tag. Each list item starts with the <b>(li)</b> tag.</p>
+<p>The list items will be marked with numbers by default:</p>
+
 <ol>
 	<li>Chop potatoes into quarters</li>
 	<li>Simmer in salted water for 15-20 minutes until tender</li>
 	<li>Heat milk, butter and nutmeg</li>
 	<li>Drain potatoes and mash</li>
 	<li>Mix in the milk mixtures</li>
+</ol>
+<br>
+<p>The type attribute of the <b>ol</b> tag, defines the type of the list item marker:</p>
+<table border="1">
+	<tr align="center">
+		<th scope="col">Type</th>
+		<th scope="col">Description</th>
+	</tr>
+	<tr align="center">
+		<td><b>type="1"</b></td>
+		<td>The list items will be numbered with numbers (default)</td>
+	</tr>
+	<tr align="center">
+		<td><b>type="A"</b></td>
+		<td>The list items will be numbered with uppercase letters</td>
+	</tr>
+	<tr align="center">
+		<td><b>type="a"</b></td>
+		<td>The list items will be numbered with lowercase letters</td>
+	</tr>
+	<tr align="center">
+		<td><b>type="I"</b></td>
+		<td>The list items will be numbered with uppercase roman numbers</td>
+	</tr>
+	<tr align="center">
+		<td><b>type="i"</b></td>
+		<td>The list items will be numbered with lowercase roman numbers</td>
+	</tr>
+</table>
+<br>
+<h4>Example: Numbers</h4>
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h4>Example: Letters</h4>
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h4>Example: Lowercase Letters</h4>
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h4>Example: Uppercase Roman Numbers</h4>
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h4>Example: Lowercase Roman Numbers</h4>
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
 </ol>
 
 <br>
@@ -26,8 +92,7 @@
 		<li>Freshly grated nutmeg</li>
 		<li>Salt and paper to taste</li>
 	</ul>
-<br>
-<h3>Unordered HTML List - Choose List Item Marker</h3>
+
 <p>The CSS list-style-type property is used to define the style of the list item marker: </p>
 <table border="1">
 	<tr align="center">
@@ -82,7 +147,10 @@
 
 <br>
 
-<h3>Definition Lists</h3>
+<h3>Definition(Description) Lists</h3>
+<p>HTML also supports description lists. </p>
+<p>A description list is a list of terms, with a description of each term.</p>
+<p>The <b>(dl)</b> tag defines the description list, the <b>(dl)</b> tag defines the term (name), and the <b>(dd)</b> tag describes each term: </p>
 <dl>
 	<dt>Sashimi</dt>
 	<dd>Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi and soy sauce</dd>

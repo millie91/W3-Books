@@ -115,6 +115,21 @@
 
 <br>
 
+<h3>HTML pre Element</h3>
+<p>The HTML pre element defines preformatted text.</p>
+<p>The text inside a pre element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
+<p>The pre tag preserves both spaces and line breaks:</p>
+<pre>
+   My Bonnie lies over the ocean.
+   My Bonnie lies over the sea.
+
+   My Bonnie lies over the ocean.
+  
+   Oh, bring back my Bonnie to me.
+</pre>
+
+<br>
+
 <h3>HTML Tag Reference</h3>
 <table border="1">
 	<tr><td><b>html</b></td><td>Defines the root of an HTML document</td>
@@ -131,37 +146,77 @@
 
 <h3>HTML Attributes</h3>
 <table border="1">
-	<tr><td><b>alt</b></td><td>Specifies an alternative text for an image, when the image cannot be displayed
-</td> 
-	<tr><td><b>disabled</b></td><td>Specifies that an input element should be disabled
-</td> 
-	<tr><td><b>href</b></td><td>Specifies the URL (web address) for a link
-</td> 
-	<tr><td><b>id</b></td><td>Specifies a unique id for an element
-</td> 
-	<tr><td><b>src</b></td><td>Specifies the URL (web address) for an image
-</td> 
-	<tr><td><b>style</b></td><td>Specifies an inline CSS style for an element
-</td> 
-	<tr><td><b>title</b></td><td>Specifies extra information about an element (displayed as a tool tip)
-</td> 
+	<tr><td><b>alt</b></td><td>Specifies an alternative text for an image, when the image cannot be displayed</td> 
+	<tr><td><b>disabled</b></td><td>Specifies that an input element should be disabled</td> 
+	<tr><td><b>href</b></td><td>Specifies the URL (web address) for a link</td> 
+	<tr><td><b>id</b></td><td>Specifies a unique id for an element</td> 
+	<tr><td><b>src</b></td><td>Specifies the URL (web address) for an image</td> 
+	<tr><td><b>style</b></td><td>Specifies an inline CSS style for an element</td> 
+	<tr><td><b>title</b></td><td>Specifies extra information about an element (displayed as a tool tip)</td> 
 </table>
 
 <br>
 
-<h3>HTML pre Element</h3>
-<p>The HTML pre element defines preformatted text.</p>
-<p>The text inside a pre element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
-<p>The pre tag preserves both spaces and line breaks:</p>
-<pre>
-   My Bonnie lies over the ocean.
-   My Bonnie lies over the sea.
+<h3>HTML Formatting Elements</h3>
+<table border="1">
+	<tr><td><b>b</b></td><td>Bold text</td> 
+	<tr><td><b>strong</b></td><td>Important text</td> 
+	<tr><td><b>i</b></td><td>Italic text</td> 
+	<tr><td><b>em</b></td><td>Emphasized text</td> 
+	<tr><td><b>mark</b></td><td>Marked text</td> 
+	<tr><td><b>small</b></td><td>Small text</td> 
+	<tr><td><b>del</b></td><td>Deleted text</td></td> 
+	<tr><td><b>ins</b></td><td>Inserted text</td>  
+	<tr><td><b>sub</b></td><td>Subscript text</td>
+	<tr><td><b>sup</b></td><td>Superscript text</td> 
+</table>
 
-   My Bonnie lies over the ocean.
-  
-   Oh, bring back my Bonnie to me.
-</pre>
+<br>
 
+<h3>HTML Quoatation and Citation Elements</h3>
+<table border="1">
+	<tr><td><b>abbr</b></td><td>Defines an abbreviation or acronym</td> 
+	<tr><td><b>address</b></td><td>Defines contact information for the author/owner of a document</td> 
+	<tr><td><b>bdo</b></td><td>Defines the text direction</td> 
+	<tr><td><b>blockquote</b></td><td>Defines a section that is quoted from another source</td> 
+	<tr><td><b>cite</b></td><td>Defines the title of a work</td> 
+	<tr><td><b>q</b></td><td>Defines a short inline quotation</td> 
+</table>
+
+<br>
+<hr>
+<br>
+
+<h3>HTML (code) For Computer Code</h3>
+	<code>
+	var x = 5;
+	var y = 6;
+	document.getElementById("demo").innerHTML = x + y;
+	</code>
+
+	<p>Notice that the (code) element does not preserve extra whitespace and line-breaks. To fix this, you can put the (code) element inside a <b>(pre)</b> element:</p>
+	<pre>
+	<code>
+	var x = 5;
+	var y = 6;
+	document.getElementById("demo").innerHTML = x + y;
+	</code>
+	</pre>
+	
+<br>
+
+<h3>HTML (var) For Variable</h3>
+<p>The HTML (var) element defines a variable. The variable could be a variable in a mathematical expression or a variable in programming context:</p>
+Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.
+
+<h3>HTML Computer Code Elements</h3>
+<table border="1">
+	<tr><td><b>code</b></td><td>Defines programming code</td> 
+	<tr><td><b>kbd</b></td><td>Defines keyboard input</td> 
+	<tr><td><b>samp</b></td><td>Defines the text direction</td> 
+	<tr><td><b>var</b></td><td>Defines a variable</td> 
+	<tr><td><b>pre</b></td><td>Defines preformatted text</td> 
+</table>
 
 </body>
 </html>
