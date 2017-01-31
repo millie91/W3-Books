@@ -197,7 +197,78 @@
 			<p>You can allow users to select multiple options from this list by adding the <b>multiple</b> attribute with a value of multiple.</p>
 			<p>It is a good idea to tell users if they can select more than one option at a time. It is also helpful to indicate that on a PC they should hold down the <b>control</b> key while selecting multiple options and on a Mac they should use the <b>command</b> key while selecting options.</p>
 		</ul>
+		<h4>Example: </h4>
+		<form action="http://www.example.com/profile.php">
+			<p>Do you play any of the following instruments? (You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</p>
+			<select name="instruments" size="4" multiple="multiple">
+				<option value="guitar" selected="selected">Guitar</option>
+				<option value="drums">Drums</option>
+				<option value="keyboard" selected="selected">Keyboard</option>
+				<option value="bass">Bass</option>
+			</select>
+		</form>
 	</ul>
+	<h3>File Input Box</h3>
+	<ul>
+		<li><b>INPUT: </b></li>
+		<p>If you want to allow users to upload a file (for example an image, video, mp3 or a PDF), you will need to use a file input box.</p>
+		<ul>
+			<li><b>TYPE="FILE": </b></li>
+			<p>This type of input creates a box that looks like a text input followed by a <b><em>Browse</em></b> button. (One notable exception is Safari on a Mac, which tends to display a button labelled <b><em>Choose File</em></b> followed by the text "no file selected" or the name of the file that has been choseb by the user.)</p>
+			<p>When the user clicks on the <b><em>Browse</em></b> button, a window opens up that allows them to sleect a file from their computer to be uploaded to the website.</p>
+			<p>When you are allowing users to upload files, the <b>method</b> attribute on the <b>(form)</b> element must have a value of post (<em>You cannot send files using the HTTP get method</em>).</p>
+			<p>When a user clicks on the <b>browse</b> button, the presentation of the window that allows them to browse for the file they want to upload will match the windows of the user's operating system. You cannot control the appearance of these windows.</p>
+		</ul>
+		<h4>Example: </h4>
+		<form action="http://www.example.com/upload.php" method="post">
+			<p>Upload your song in MP3 format: </p>
+			<input type="file" name="user-song" /> <br />
+			<input type="submit" value="Upload" />
+		</form>
+	</ul>
+	<h3>Submit Button</h3>
+	<ul>
+		<li><b>INPUT: </b></li>
+		<br>
+		<ul>
+			<li><b>TYPE="SUBMIT: </b></li>
+			<p> Defines a button for submitting the form data to a form-handler. Or better say it is used to send a form to the server.</p>
+			<p>The form-handler is typically a server page with a script for processing input data.</p>
+			<p>The form-handler is specified in the form's action attribute: </p>
+			<h4>Example: </h4>
+			<form action="action_page.php">
+			  First name:<br>
+			  <input type="text" name="firstname" value="Mickey"><br>
+			  Last name:<br>
+			  <input type="text" name="lastname" value="Mouse"><br><br>
+			  <input type="submit" value="Submit">
+			</form><br>
+			<li><b>NAME: </b></li>
+			<p>It can use a name attribute but it does not need to have one</p>
+			<li><b>VALUE: </b></li>
+			<p>The <b>value</b> attribute is used to control the text that appears on a button. </p>
+			<p>It is a good idea to specify the words you want to appear on a button because the default value of buttons on some browsers is <em>"Submit query"</em> and this might not be appropriate for all kinds of forms.</p>
+			<p>Different browsers will shows submit buttons in different ways and tend to fit the visual presentation of the browser.</p>
+			<p>If you want to control the appeareance of a submit button, you can either use CSS or you can use an image for the button.</p>
+		</ul>
+		<h4>Example: </h4>
+		<form action="http://www.example.com/subscribe.php">
+			<p>Subscribe to our email list:</p>
+			<input type="text" name="email" />
+			<input type="submit" name="subscribe" value="Subscribe" />
+		</form>
+	</ul>
+	<h3>Image Button</h3>
+	<ul>
+		<li><b>INPUT: </b></li>
+		<ul>
+			<li><b>TYPE="IMAGE":</b></li>
+			<p>If you want to use an image for the submit button, you can give the <b>type</b> attribute a value of <b>image</b>.</p>
+			<p>The <b>src, width, height, alt</b> attributes work just like they do when used with the <b>img</b> element.</p>
+
+		</ul>
+	</ul>
+
 </ul>
 
 
