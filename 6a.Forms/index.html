@@ -265,10 +265,36 @@
 			<li><b>TYPE="IMAGE":</b></li>
 			<p>If you want to use an image for the submit button, you can give the <b>type</b> attribute a value of <b>image</b>.</p>
 			<p>The <b>src, width, height, alt</b> attributes work just like they do when used with the <b>img</b> element.</p>
-
 		</ul>
+		<h4>Example: </h4>
+		<form action="http://www.example.org/subscribe.php">
+			<p>Subscribe to our email list:</p>
+			<input type="text" name="email" />
+			<input type="image" src="images/subscribe.jpg" width="100" height="40">
+		</form>
 	</ul>
-
+	<h3>Button and Hidden Controls</h3>
+	<ul>
+		<li><b>BUTTON: </b></li>
+		<p>This element was introduced to allow users more control over how their buttons appear, and to allow other elements to appear inside the button.</p>
+		<p>This means that you can combine text and images between the opening and closing <b>(button)</b> tags.</p>
+	</ul>
+	<ul>
+		<li><b>INPUT: </b></li>
+			<ul>
+				<li><b>TYPE="HIDDEN": </b></li>
+				<p>This example also shows a <b>hidden</b> form control. These form controls are not shown on the page (although you can see them if you use the <b><em>View Source</em></b> option in the browser).</p>
+				<p>They allow web page authors to add values to forms that users cannot see.</p>
+				<p>For example, a web page author might use a hidden field to indicate which page the user was on when they submitted a form.</p>
+			</ul>
+	</ul>
+	<h4>Example: </h4>
+	<form action="http://www.example.com/add.php">
+		<button>
+			<img src="images/add.gif" alt="add" width="20" height="20" /> Add
+		</button>
+		<input type="hidden" name="bookmark" value="lyrics" />
+	</form>
 </ul>
 
 
