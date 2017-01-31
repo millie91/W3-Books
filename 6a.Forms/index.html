@@ -392,6 +392,51 @@
 		<input type="date" name="depart" />
 		<input type="submit" value="Submit" />
 	</form>
+	<h3>Email and URL Input</h3>
+	<ul>
+		<li><b>INPUT: </b></li>
+		<p>HTML5 has also introduced inputs that allow visitors to enter email addresses and URLs. Browsers that do not support these input types will just treat them as text boxes.</p>
+		<li><b>TYPE="EMAIL": </b></li>
+		<p>If you ask a user for an email address, you can use the email input. Browsers taht support HTML5 validation will check that the user has provided information in the correct format of an email address.</p>
+		<p>Some smartphones also optimise their keyboard to display the keys you are most likely to need when entering an email address (such as the @ symbol)</p>
+		<li><b>TYPE="URL": </b></li>
+		<p>A URL input can be used when you are asking a usef for a web page address. Browsers that support HTML5 validation will check that the user has provided information in the format of a URL.</p>
+		<p>Some smartphones also optimise their keyboard to display the keys you are most likely to need when entering a URL.</p>
+		<h4>Examples:</h4>
+		<form action="http://www.example.org/subscribe.php">
+			<p>Please enter your email address: </p>
+			<input type="email" name="email" />
+			<input type="submit" value="Submit" />
+		</form><br>
+		<hr />
+		<form action="http://www.example.org/profile.php">
+			<p>Please enter your website address: </p>
+			<input type="url" name="website" />
+			<input type="submit" value="Submit">	
+		</form>
+	</ul><br>
+	<h3>Search Input</h3>
+	<ul>
+		<li><b>INPUT: </b></li>
+		<p>If you want to create a single line text box for search queries, HTML5 provides a special type of input for that purpose.</p>
+		<li><b>TYPE="SEARCH"</b></li>
+		<p>If you want to create a single line text box for a search queries, HTML5 provides a special search input.</p>
+		<p>To create HTML5 search box the <b>(input)</b> element should have a <b>type</b> attribute whose value is <b>search</b>. Older Browsers will simply treat it like a single line text box.</p>
+		<p>Recent Browsers add some features to improve visibility. For example, Safari on Mac adds a cross to clear the search box when you have started to enter information. Safari also automatically rounds the corners on the search input field.</p>
+		<li><b>PLACEHOLDER: </b></li>
+		<p>On any text input, you can also use an attribute called <b>placeholder</b> whose value is text that will be shown in the text box until the user clicks in that area. Older browsers simply ignore this attribute.</p>
+		<h4>Examples: </h4>
+		<form action="http://www.example.org/search.php">
+			<p>Search:</p>
+			<input type="search" name="search" />
+			<input type="submit" value="Search" />
+		</form><br><hr />
+		<form action="http://www.example.org/search.php">
+			<p>Search:</p>
+			<input type="search" name="search" placeholder="Enter Keyword" />
+			<input type="submit" value="Search">
+		</form>
+	</ul>
 </ul>
 </body>
 </html>
