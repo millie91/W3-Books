@@ -149,8 +149,57 @@
   		<p>The <b>checked</b> attribute indicates that this box should be checked when the page loads. If used, its value should be checked.</p>
   	</ul>
   </ul>
-
+  <br>
+  <h3>Drop Down List Box</h3>
+  <ul>
+  	<li><b>SELECT:</b></li>
+  	<p>A drop down list box, also known as a select box, allows users to select one option from a drop down list.</p>
+  	<p>The <b>(select)</b> element is used to create a drop down list box. It contains two or more <b>(option)</b> elements.</p>
+  	<ul>
+  		<li><b>NAME: </b></li>
+  		<p>The name attribute indicates the name of the form control being sent to the server, along with the value the user selected.</p>
+  	</ul>
+  	<li><b>OPTION: </b></li>
+  	<p>The <b>(option)</b> element is used to specify the options that the user can select from. The words between opening <b>(option)</b> and closing <b>(option)</b> tags will be shown to the user in the drop down box.</p>
+  	<ul>
+	  	<li><b>VALUE: </b></li>
+	  	<p>The <b>(option)</b> element uses the value attribute to indicate the value that is sent to the server along with the name of the control if this option is selected.</p>
+	  	<li><b>SELECTED: </b></li>
+	  	<p>The selected attribute can be used to indicate the option that should be selected when the page loads. The value of this attribute should be selected.</p>
+	  	<p>If this attribute is not used, the first option will be shown when the page loads. If the user does not select an option, then the first item will be sent to the server as the value for this control.</p>
+	</ul>	
+	<p>The <b>function</b> of the drop down list box is similar to that of the radio buttons (in that only one option can be selected). There are two key factors in choosing which to use:</p>
+	<ol>
+		<li><p>If users need to see all options at a glance, radio buttons are better suited</p></li>
+		<li><p>If there is a very long list of options (such as a list of countries), drop down list boxes work better</p></li>
+	</ol>
+	<h4>Example: </h4>
+	<form action="http://www.example.com/profile.php">
+		<p>What device do you listen to music on?</p>
+		<select name="devices">
+			<option value="ipod">iPod</option>
+			<option value="radio">Radio</option>
+			<option value="computer">Computer</option>
+		</select>
+	</form>
+  </ul>
+  <br>
+	<h3>Multiple Select Box</h3>
+	<ul>
+		<li><b>SELECT: </b></li>
+		<br>
+		<ul>
+		<li><b>SIZE: </b></li>
+			<p>You can turn a drop down select box into a box that shows more than one option by adding the <b>size</b> attribute.</p>
+			<p>Its value should be the number of options you want to show at once. In the example you can see that three of the four options are shown.</p>
+			<p>Unfortunately, the way that browsers have implemented this attribute is not perfect and it should be tested thoroughly if used (<em>in particular in Firefox and Safari on Mac</em>).</p>
+			<li><b>MULTIPLE: </b></li>
+			<p>You can allow users to select multiple options from this list by adding the <b>multiple</b> attribute with a value of multiple.</p>
+			<p>It is a good idea to tell users if they can select more than one option at a time. It is also helpful to indicate that on a PC they should hold down the <b>control</b> key while selecting multiple options and on a Mac they should use the <b>command</b> key while selecting options.</p>
+		</ul>
+	</ul>
 </ul>
+
 
 </body>
 </html>
