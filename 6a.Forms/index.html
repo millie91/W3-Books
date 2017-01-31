@@ -295,8 +295,65 @@
 		</button>
 		<input type="hidden" name="bookmark" value="lyrics" />
 	</form>
+	<h3>Labelling Form Controls</h3>
+	<ul>
+		<li><b>LABEL: </b></li>
+		<p>When introducing <b>from controls</b>, the code was kept simple by indicating the purpose of each one in text next to it. However, each <b>from controls</b> should have its own <b>label</b> element as this makes the form accessible to vision-impaired users.</p>
+		<p>The <b>(label)</b> element can be used in two ways. It can: </p>
+		<ol>
+			<li>Wrap around both the text description and the form input (as shown on the first line of the example).</li>
+			<li>Be kept separate from the form control and use the <b>for</b> attribute to indicate which form control it is a label for (as shown with the radio buttons).</li>
+		</ol>
+		<ul><br>
+			<li><b>FOR: </b></li>
+			<p>The <b>for</b> attribute states which form control the label belongs to.</p>
+			<p>Note how the radio buttons use the <b>id</b> attribute. The value of the <b>id</b> attribute uniquely identifies an element from all other elements on a page.</p>
+			<p>The value of the <b>for</b> attribute mathes that of the <b>id</b> attribute on the form control it is labelling.</p>
+			<p>This technique using the <b>for</b> and <b>id</b> attributes can be used on any form control.</p>
+			<p>When a <b>(label)</b> element is used with a checkbox or radio button, users can click on either the form control or the label to select. </p>
+			<p>The expanded clickable area makes the form easier to use. The position of the label is very important. If users do not know where to enter information or what information to enter, they are less likely to use the form correctly.</p>
+			<p>As a rule of thumb, here are the best places to place labels on form controls.</p>
+			<p><b>ABOVE OR TO THE LEFT:</b></p>
+			<ul>
+				<li>Text Inputs</li>
+				<li>Text Areas</li>
+				<li>Select Boxes</li>
+				<li>File Uploads</li>
+			</ul>
+			<p><b>TO THE RIGHT:</b></p>
+			<ul>
+				<li>Individual Checkboxes</li>
+				<li>Individual Radio Buttons</li>
+			</ul>
+		</ul><br>
+		<h4>Example: </h4>
+		<label>Age: <input type="text" name="age" /></label>
+		<br />
+		Gender:
+		<input id="female" type="radio" name="gender" value="f">
+		<label for="female">Female</label>
+		<input id="male" type="radio" name="gender" value="m">
+		<label for="male">Male</label>
+	</ul>
+	<h3>Grouping From Elements</h3>
+	<br>
+	<ul>
+		<li><b>FIELDSET: </b></li>
+		<p>You can group related form controls together inside the <b>fieldset</b> element. This is particularly helpful for longer forms.</p>
+		<p>Most browsers will show the <b>fieldset</b> with a line around the edge to show how they are related. The appearance of these lines can be adjusted using CSS.</p>
+		<li><b>LEGEND: </b></li>
+		<p>The <b>legend</b> element can come directly after the opening <b>fieldset</b> tag and contains a caption which helps identify the purpose of that group of form controls.</p>
+	</ul>	
+	<h4>Examples: </h4>
+	<fieldset>
+		<legend>Contact Details</legend>
+		<label>Email:<br />
+		<input type="text" name="email" /></label><br />
+		<label>Mobile:<br />
+		<input type="text" name="mobile" /></label><br />
+		<label>Telephone:<br />
+		<input type="text" name="telephone" /></label>
+	</fieldset>
 </ul>
-
-
 </body>
 </html>
