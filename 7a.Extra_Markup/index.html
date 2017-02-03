@@ -35,6 +35,33 @@
 	<p>He is known for sculptures and large-scale installation art employing elemental materials such as light, water, and air temperature to enhance the viewer's experience.</p>
 	<!-- end of main text -->
 	<!-- <a href="mailto:info@example.org">Contact</a> -->
+	<hr />
+	<h3>ID Attribute</h3>
+	<p>Every HTML element can carry the <b>id attribute</b>. It is used to uniquely identify that element from other elements on the page.</p>
+	<p>Its value should start with a letter or an underscore (not a number or any other character).</p>
+	<p>It is important that no two elements on the same page have the same value for their <b>id attributes</b> (otherwise the value is no longer unique).</p>
+	<p>As you will see when you come to look at CSS in the next section, giving an element a unique identity allows you to style it differently from any other instance of the same element on the page.</p>
+	<p>For example, you might want to assign one paragraph within the page (perhaps a paragraph containing a pull quote) a different style from all of the other paragraphs.</p>
+	<p>In the following example, the paragraph with the <b>id attribute</b> whose value is <b>pullquote</b> is made uppercase using CSS.</p>
+	<p>If you go on to learn about JavaScript (a language that allows you to add interactivity to your pages), <b>id attributes</b> can be used to allow the script to work with that particular element.</p>
+	<h4>Example:</h4>
+	<p>Water and air. So very commonplace are these substances, they hardly attract attention - and yet they vouchsafe our very existence.</p>
+	<p id="pullquote">Every time I view the sea, as if visiting my ancestral home; I embark on a voyage of seeing.</p>
+	<p>Mystery of mysteries, water and air are right there beofre us in the sea.</p>
+	<br>
+	<h3>Class Attribute</h3>
+	<p>Every HTML element can also carry a <b>class attribute</b>.</p> 
+	<p>Sometimes, rather than uniquely identifying one element within a document, you will want a way to identify several elements as being different from the other elements on the page.</p>
+	<p>For example, you might have some paragraphs of text that contain infromation that is more important than others and want to distinguish between these elements, or you might want to differentiate between links that point to other pages on your own site and links that point to external sites.</p>
+	<p>To do this you can use the <b>class attribute</b>. Its value should describe the class it belongs to. In the following example, key paragraphs have a <b>class attribute</b> whose value is <b>important</b>.</p>
+	<p>The <b>class attribute</b> on any element can share the same value. So, in this example, the value of <b>important</b> could be used on headings and links,too.</p>
+	<p>By default, using these attributes does not affect the presentation of an element. It will only change their appearance if there is a CSS rule that indicates it should be displayed differently.</p>
+	<p>In this example, CSS has been applied to make elements with a <b>class attribute</b> whose value is <b>important uppercase</b> and elements with a <b>class attribute</b> whose value is <b>admittance</b> red.</p>
+	<p>If you would like to indicate that an element belongs to several classes, you can separate class names with a space, as you can see in the third paragraph in the following example:</p>
+	<h4>Example:</h4>
+	<p class="important">For a one-year period from November 2010, the Marugame Genichiro-Inokuma Museum of Contemporary Art (MIMOCA) will host a cycle of four Hiroshi Sugimoto exhibitions.</p>
+	<p>Each will showcase works by the artist thematically contextualised under the headings "Science", "Architecture", "History" and "Religion" so as to present a comprehensive panorama of the artist's ouevre.</p>
+	<p class="important admittance">Hours: 10:00 - 18:00 (No admittance after 17:30)</p>
 	
 </body>
 </html>
