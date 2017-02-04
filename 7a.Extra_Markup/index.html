@@ -82,7 +82,7 @@
 	<h4>Example:</h4>
 	Timed to a single revolution of the planet around the sun at a 23.4 degrees tilt that plays out the rhythm of the seasons, this <em>Origins of Art</em> cycle is organised around four themes: <b>science, architecture, history</b> and <b>religion</b>.
 	<br>
-	<h3>Grouping Text and Elements in a Block</h3>
+	<h3>Grouping Text and Elements in a BLOCK</h3>
 	<ul>
 		<li><b>DIV: </b></li>
 		<p>The <b>div</b> element allows you to group a set of elements together in one block-level box.</p>
@@ -103,6 +103,50 @@
 			</ul>
 		</div> <!-- End of Header -->
 	</ul>
-	
+	<br>
+	<h3>Grouping Text and Elements INLINE</h3>
+	<ul>
+		<li><b>SPAN: </b></li>
+		<p>The <b>span</b> element acts like an inline equivalent of the <b>div</b> element. It is used to either:</p>
+		<ol>
+			<li>Contain a section of a text where there is no other suitable element to differentiate it from its surrounding text.</li>
+			<li>Contain a number of inline elements.</li>
+		</ol>
+		<p>The most common reason why people use <b>span</b> elements is so that they can control the appearance of the content of these elements using CSS.</p>
+		<p>You will usually see that a <b>class</b> or <b>id</b> attribute is used with <b>span</b> elements:</p>
+		<ul>
+			<li>To explain the purpose of this <b>span</b> element</li>
+			<li>So that CSS styles can be applied to elements that have specific values for these attributes.</li>
+		</ul>
+		<h4>Example:</h4>
+		<p>Anish Kapoor won the Turner Prize in 1991 and exhibited at the <span class="gallery">Tate Modern</span> gallery in London in 2003.</p>
+	</ul>
+	<br>
+	<h3>IFrames</h3>
+	<p>An <b>iframe</b> is like a little window that has been cut into your page - and in that window you can see another page. The term iframe is an abbreviation of <b>inline frame</b>.</p>
+	<p>One common use of iframes (that you may have seen on various websites) is to embed a Google Map into a page.</p>
+	<p>The content of the iframe can be any html page (either located on the same server or anywhere else on the web).</p>
+	<p>An <b>iframe</b> is created using the <b>iframe</b> element. There are a few attributes that you will need to know to use it:</p>
+	<ul>
+		<li><b>SRC: </b></li>
+		<p>The <b>src</b> attribute specifies the URL of the page to show in the frame.</p>
+		<li><b>HEIGHT: </b></li>
+		<p>The <b>height</b> attribute specifies the height of the iframe in pixels.</p>
+		<li><b>WIDTH: </b></li>
+		<p>The <b>width</b> attribute specifies the width of the iframe in pixels.</p>
+		<li><b>SCROLLING: </b></li>
+		<p>The <b>scrolling</b> attribute will not be supported in HTML5. In HTML4 and XHTML, it indicates whether the iframe should have scrollbars or not.</p>
+		<p>This is important if the page inside the iframe is larger than the space you have allowed for it (using the <b>height and width</b> attributes).</p>
+		<p>Scrollbars allow the user to move around the frame to see more content. It can take one of three values: <b>yes</b>(to show scrollbars), <b>no</b>(to hide scrollbars) and <b>auto</b> (to show them only if needed).</p>
+		<li><b>FRAMEBORDER: </b></li>
+		<p>The <b>frameborder</b> attribute will not be supported in HTML5. In HTML4 and XHTML, it indicates whether the frame should have a border or not.</p>
+		<p>A value of 0 indicates that no borders should be shown. A value of 1 indicates that a border should be shown.</p>
+		<li><b>SEAMLESS: </b></li>
+		<p>In HTML5, a new attribute called <b>seamless</b> can be applied to an iframe where scrollbars are not desired.</p>
+		<p>The <b>seamless</b> attribute (like some other new HTML5 attributes) does not need a value, but you will often see authors give it a value of <b>seamless</b>. Older browsers do not support the <b>seamless</b> attribute.</p>
+	</ul>
+	<h4>Examples:</h4>
+	<iframe width="450" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.662188378098!2d-0.12914528422958071!3d51.519413279637114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b323093d307%3A0x2fb199016d5642a7!2sThe+British+Museum!5e0!3m2!1sen!2suk!4v1486217660303"></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396220.658720928!2d-76.59939712187148!3d38.484074009889184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2suk!4v1486218131604" width="450" height="350" frameborder="0" scrolling="no"></iframe>
 </body>
 </html>
