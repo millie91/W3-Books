@@ -4,6 +4,46 @@
 	<title>Flash,Video and Audio</title>
 </head>
 <body>
-
+	<h1 align="center">Flash, Video and Audio</h1>
+	<ul>
+		<li>How to add Flash movies into your site</li>
+		<li>How to add Video and Audio to your site</li>
+		<li>HTML <b>video</b> and <b>audio</b> elements</li>
+	</ul>
+	<p>Flash is a very popular technology used to add animations, video and audio to websites. This chapter begins by looking at how to use it in your web pages.</p>
+	<p>We then focus on how to add video and audio to your site, using either the new HTML5 <b>video</b> and <b>audio</b> elements or a hosted service (such as Youtube or SoundCloud). In this chapter you will learn: </p>
+	<ul>
+		<li>How to use Flash in your web pages</li>
+		<li>How to use HTML5 <b>video</b> and <b>audio</b> elements</li>
+		<li>When to host your own video and audio and when to use a service sucha s YouTube</li>
+	</ul>
+	<h3>Adding A Flash Movie To Your Web Page</h3>
+	<p>The most popular way of adding Flash into a web page is using <b>JavaScript</b>.</p>
+	<p>There are several scripts that allow you to do this without an in-depth understanding of the <b>JavaScript</b> language.</p>
+	<p>The script we will be looking at here is called <b>SWFObject</b>.</p>
+	<p>You can obtain a copy of it for free from Google, and you can see how we use it on the next page.</p>
+	<p>One advantage to using this technique is that it allows browsers to show alternative content for users whose browsers are not capable of showing Flash.</p>
+	<p>This technique uses a <b>div</b> element to create a space where the Flash movie should sit.</p>
+	<p>The <b>div</b> element has an <b>id</b> attribute whose value is used by the SWFObject script. In this example, the value of the <b>id</b> attribute is <b>bird</b>.</p>
+	<p>Inside the <b>div</b> element you can place the alternative content for users who are not able to play Flash.</p>
+	<p>The SWFObject script will check to see if the user's browser can play the Flash movie. If it can, the script will replace the content of the <b>div</b> with the .swf file.</p>
+	<p>For users who <em>cannot</em> see the Flash movie, you could show a still from the movie instead. You might also like to consider using a text description of the Flash file.</p>
+	<p>If you use a text description as alternative content, then you can achieve two further benefits: </p>
+	<ol>
+		<li>The text can be accessed by those with visual and/or physical impairments who are not able to interact with the Flash file.</li>
+		<li>The text can be indexed by search engines (Which are not as effective at indexing SWF files), increasing the chance that your content will be found.</li>
+	</ol>
+	<h4>Example: </h4>
+	<em>(load 8b.Bird_Example index.html)</em>
+	<p>In this example, the SWFObject script is hosted on Google's servers. We <b>include</b> the script in this web page using the first of the two <b>script</b> elements.</p>
+	<p>The type attribute is used on the <b>script</b> element to indicate that the script inside is written in JavaScript. The <b>src</b> attribute tells the browser where to fins the script.</p>
+	<p>The second <b>script</b> element is used to tell the browser about the Flash movie, as well as which element it should replace. This element is actually telling the SWFObject script <b>five</b> pieces of information, which are in the brackets: </p>
+	<ol>
+		<li>The <b>location</b> of the .swf file: flash/bird.swf</li>
+		<li>The element that the Flash movie should <b>replace</b>, specified by the value of the <b>id</b> attribute on the <b>div</b> element: bird.</li>
+		<li>The <b>width</b> of the Flash movie: 400px.</li>
+		<li>The <b>height</b> of the Flash movie: 300px.</li>
+		<li>The minimum <b>version</b> of the Flash player needed to view the movie: Flash Player 8.</li>
+	</ol>
 </body>
 </html>
