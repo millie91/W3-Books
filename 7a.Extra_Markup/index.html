@@ -148,5 +148,50 @@
 	<h4>Examples:</h4>
 	<iframe width="450" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.662188378098!2d-0.12914528422958071!3d51.519413279637114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b323093d307%3A0x2fb199016d5642a7!2sThe+British+Museum!5e0!3m2!1sen!2suk!4v1486217660303"></iframe>
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396220.658720928!2d-76.59939712187148!3d38.484074009889184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2suk!4v1486218131604" width="450" height="350" frameborder="0" scrolling="no"></iframe>
+	<br>
+	<h3>Information About Your Pages</h3>
+	<ul>
+		<li><b>META: </b></li>
+		<p>The <b>meta</b> element lives inside the <b>head</b> element and contains information about that web page.</p>
+		<p>It is not visible but fulfills a number of purposes such as telling search engines about your page, who created it, and whether or not it is time sensitibe. (if the page is time sensitive, it can be set to expire).</p>
+		<p>The <b>meta</b> element is an empty element so it does not have a closing tag. It uses attributes to carry the information.</p>
+		<p>The most common attributes are the <b>name</b> and <b>content</b> attributes, which tend to be used together.</p>
+		<p>These attributes specify properties of the entire page. The value of the <b>name</b> attribute is the property you are setting, and the value of the <b>content</b> attribute is the value that you want to give to this property.</p>
+		<p>In the first line of the example on the opposite page, you can see a <b>meta</b> element where the <b>name</b> attribute indicates an intention to specify a description for the page. The <b>content</b> attribute is where this description is actually specified.</p>
+		<p>The value of the <b>name</b> attribute can be anything you want it to be. Some defined values for this attribute that are commonly used are: </p>
+		<ul>
+			<li><b>DESCRIPTION: </b></li>
+			<p>This contains a descripition of the page. The description is commonly used by search engines to understand what the page is about and should be a maximum of 155 characters. Sometimes it is also displayed in search engine results.</p>
+			<li><b>KEYWORDS: </b></li>
+			<p>This contains a list of comma-separated words that a user might search on to find the page. In practice, this no longer has any noticeable effect on how search engines index your site.</p>
+			<li><b>ROBOTS: </b></li>
+			<p>This indicates whether search engines should add this page to their search results or not. A value of <b>noindex</b> can be used if this page should not be added.</p>
+			<p>A value of <b>nofollow</b> can be used if search engines should add this page in their results but not any pages that it links.</p>
+		</ul>
+		<p>The <b>meta</b> element also uses the <b>http-equiv</b> and content attributes in pairs. In our example, you can see three instances of the <b>http-equiv</b> attribute. Each one has a different purpose: </p>
+			<ul>
+				<li><b>AUTHOR: </b></li>
+				<p>This defines the author of the web page.</p>
+				<li><b>PRAGMA: </b></li>
+				<p>This prevents the browser from caching the page. (That is, storing it locally to save time downloading it on subsequent visits.)</p>
+				<li><b>EXPIRES: </b></li>
+				<p>Because browsers often cache the content of a page, the expires option can be used to indicate when the page should expire (and no longer be cached). Note that the date must be specified in the format shown.</p>
+			</ul>
+			<h4>Example (<em>commented out</em>): </h4>
+			<!-- 
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<title>Informaton About Your Pages</title>
+					<meta name="description" content="An Essay on Installation Art" />
+					<meta name="keywords" content="installation, art, opinion" />
+					<meta name="robots" content="nofollow" />
+					<meta http-equiv="author" content="Jon Duckett" />
+					<meta http-equiv="pragma" content="no-cache" />
+					<meta http-equiv="expires" content="Fri, 04 Apr 2014 23:59:59 GMT" />
+				</head>
+			</html>
+			-->
+	</ul>
 </body>
 </html>
