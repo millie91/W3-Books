@@ -45,5 +45,116 @@
 		<li>The <b>height</b> of the Flash movie: 300px.</li>
 		<li>The minimum <b>version</b> of the Flash player needed to view the movie: Flash Player 8.</li>
 	</ol>
+	<h3>Adding a Flash Video to Your Pages</h3>
+	<p>This example uses the <b>OS FLV</b> player to dispay a video called puppy.flv, which has already been converted into FLV format.</p>
+	<p>You have already seen how to use SWFObject to embed a basic animation in a page, but sometimes Flash movies need information in order for them to work.</p>
+	<p>In this example, the video player needs to know the path to the video it has to play, so SWFObject uses JavaScript variables to pass this information to the Flash movie. </p>
+	<p>These are provided in the two lines of code that start with <b>var</b>.</p>
+	<p>This particular player is not expecting any information in the <b>flashvar</b> variable, so that is left empty.</p>
+	<p>The path to the movie is supplied in the variable called <b>params.</b></p>
+	<p>The line after the variable is the one that tells the script to replace the HTML element with the video player. It is very similar to the one you saw in the earlier example that introduced SWFObject.</p>
+	<p>Different video players usually require information such as the path of th video in slightly different formats, but they usually come with examples and documentation to help you understand how to use them.</p>
+	<h4>Example:</h4>
+	<em>(load 8c.Puppy_example index.html)</em>
+	<br>
+	<h3>Adding Video to Your Pages</h3>
+	<ul>
+		<li><b>VIDEO: </b></li>
+		<p>The <b>video</b> element has a number of attributes which allow you to control video playback: </p>
+		<ol>
+			<li><b>SRC: </b></li>
+			<p>This attribute specifies the path to the video. (The example video is in H264 format so it will only work in IE and Safari).</p>
+			<li><b>POSTER: </b></li>
+			<p>This attribute allows you to specify an image to show while the video is downloading or until the user tells the video to play.</p>
+			<li><b>WIDTH, HEIGHT: </b></li>
+			<p>These attributes specify the size of the player in pixels.</p>
+			<li><b>CONTROLS: </b></li>
+			<p>When used, this attribute indicates that the browser should supply its own controls for playback.</p>
+			<li><b>AUTOPLAY: </b></li>
+			<p>When used, this attribute specifies that the file should play automatically.</p>
+			<li><b>LOOP: </b></li>
+			<p>When used, this attribute indicates that the video should start playing again once it has ended.</p>
+			<li><b>PRELOAD: </b></li>
+			<p>This attribute tells the browser what to do when the page loads. It can have on of three values: </p>
+			<ul>
+				<li><b>NONE: </b></li>
+				<p>The browser should not load the video until the user presses play.</p>
+				<li><b>AUTO: </b></li>
+				<p>The browser should download the video when the page loads.</p>
+				<li><b>METADATA: </b></li>
+				<p>The browser should just collect information such as the size, first frame, track list, and duration.</p>
+			</ul>
+			<p>In HTML5 you do not need to supply values for all attributes, such as the controls, autoplay and loop attributes used with the <b>video</b> element.</p>
+			<p>These attributes are like on/off switches. If the attribute is present, it turns that option on. If the attribute is omitted, the option is turned off.</p>
+			<p>If the browser does not support the <b>video</b> element or the format of video is used, it will display whatever is between the opening <b>video</b> and closing <b>video</b> tags.</p>
+		</ol>
+		<h4>Example:</h4>
+		<em>(load 8d.Puppy_Example_Two index.html)</em>
+	</ul>
+	<h3>Multiple Video Sources</h3>
+	<ul>
+		<li><b>SOURCE: </b></li>
+		<p>To specify the location of the file to be played, you can use the <b>source</b> element inside the <b>video</b> element. (This should replace the <b>src</b> attribute on the opening <b>video</b> tag.)</p>
+		<p>You can also use multiple <b>source</b> elements to specify that the video is available in different formants.</p>
+		<p>(Due to a bug on the iPad, you should provide the MP4 video as the first format. Otherwise, it might not play.)</p>
+			<ul>
+				<li><b>SRC: </b></li>
+				<p>This attribute specifies the path to the video.</p>
+				<li><b>TYPE: </b></li>
+				<p>You should use this attribute to tell the browser what format the video is in. Otherwise, it will download some of the video to see if it can play the file (which will take time and bandwidth.</p>
+				<li><b>CODECS: </b></li>
+				<p>The codec that was used to encode the video is supplied within the <b>type</b> attribute. Note the use of single quotes, as well as double quotes in the <b>type</b> attribute, when it is supplied.</p>
+				<p>If the browser does not support the <b>video</b> element or the format of viodeo used, it will display whatever is between the opening and closing <b>video</b> tags.</p>
+				<p></p>
+			</ul>
+			<p>By offering your videos in both HTML5 and Flash Video formats, you will ensure that it can be viewed by the majority of users on your site.</p>
+			<p>You may choose to offer HTML5 as the first option and Flash video as a fallback for people whose browser does not support HTML5 video. Or you may work the other way around.</p>
+			<p>Because some of the video players built in Flash support H264 encoding, if you use a player that supports this format you would only need to provide the video in H264 and WebM formats. (You would not need it in FLV format as well). You will see this demonstrated in the example at the end of the chapter.</p>
+			<p>If you start to work with HTML5 video in depth, you can also:</p>
+			<ul>
+				<li>Create your own playback controls</li>
+				<li>Provide different versions of the video for browsers that have different sized screens (so you can provide lower resolution content for handheld devices).</li>
+				<li>Tell different parts of a page to change when the video reaches a certain point.</li>
+			</ul>
+			<h4>Example:</h4>
+			<em>(load 8e.Puppy_Example_Three index.html)</em>
+	</ul>
+	<h3>Adding Audio to Web Pages</h3>
+	<p>By far the most popular format for putting audio on web pages is MP3. As with video, there are three routes commonly taken:</p>
+	<ol>
+		<li><b>USE A HOSTED SERVICE</b></li>
+		<p>There are several sites that allow you to upload your audio, and provide a player which you can embed in your page, such as Soundcloud.com and Myspace.com</p>
+		<li><b>USE FLASH</b></li>
+		<p>There are several Flash movies that allow you to play MP3 files; from simple buttons that play one track to complex players that allow you to create playlists and juke boxes.</p>
+		<li><b>USE HTML5</b></li>
+		<p>HTML5 has introduced a new <b>audio</b> element. Browsers that support this element provide their own controls - much as they do for the video files we just looked at.</p>
+	</ol>
+	<p>Some people ask how to get music to play consistenly even when visitors move from one page to another on website.</p>
+	<p>This is actually quite difficult to achieve and would rely on techniques like using AJAX to load page content or developing the entire site in Flash.</p>
+	<p>This is why some sites offer audio players in new windows, so that listeners are not interrupted when they move between pages.</p>
+	<h3>Adding a Flash MP3 Player</h3>
+	<p>There are many MP3 players that have already been written in Flash, such as:</p>
+	<ul>
+		<li>flash-mp3-player.net</li>
+		<li>musicplayer.sourceforge.net</li>
+		<li>www.wimpyplayer.com</li>
+	</ul>
+	<p>Each of these players has different functionality, so check their features before choosing one for your site. This example uses a free player from flash-mp3-player.net which is embedded in the page using the SWFObject technique we met earlier.</p>
+	<p>The player is told the path to the MP3 file using a paramter called <b>mp3</b>.</p>
+	<p>After the second <b>(script)</b> tag, you can see that we have created two JS variables:</p>
+	<ul>
+		<li>The first called <b>flashvars</b></li>
+		<li>The second called <b>params</b></li>
+	</ul>
+	<p>Even though we are not using the <b>flashvars</b> variable, the SWFObject script expects it before the <b>params</b> variable so we need it there.</p>
+	<!-- 
+	var falshwars = {};
+	var params = {
+		mp3: "music/test-audio.mp3" };
+		-->
+	<p>(Commented out) -> These variables are then added at the end of the line that embeds the MP3 player in the page (just before the second closing <b>script</b> tag.</p>
+	<h4>Example:</h4>
+		<em>(load 8f.Audio_Example_One index.html)</em>
+
 </body>
 </html>
