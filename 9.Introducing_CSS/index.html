@@ -42,5 +42,44 @@
 		<li><strong>SPECIFIC: </strong></li>
 		<p>There are also specific ways in which you can style certain elements such as lists, tables and forms.</p>
 	</ul>
+	<h3>CSS ASSOCIATES STYLE RULES WITH HTML ELEMENTS</h3>
+	<p>CSS works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed. A CSS rule contains two parts:</p>
+	<ul>
+		<li><strong>selector</strong></li>
+		<li><strong>declaration</strong></li>
+	</ul>
+	p { -> Selector
+	<br>
+		font-family: Arial; -> Declaration
+	}
+	<p>This rule indicates that all <strong>p</strong> elements should be shown in the Arial typeface.</p>
+	<p><strong>Selectors</strong> indicate which element the rule applies to. The same rule can apply to more than one element if you separate the element names with commas.</p>
+	<p><strong>Declarations</strong> indicates how the elements referred to in the selector should be styled. Declarations are split into two parts (a property and a value), and are separated by a colon.</p>
+	<br>
+	<h3>CSS PROPERTIES AFFECT HOW ELEMENTS ARE DISPLAYED</h3>
+	<p>CSS declarations sit inside curly brackets and each is made up of two parts: </p>
+	<ul>
+		<li><strong>PROPERTY</strong></li>
+		<li><strong>VALUE</strong></li>
+	</ul>
+	<p>And separated by a colon.</p>
+	<p>You can specify several properties in one declaration, each separted by a semi-colon.</p>
+	h1, h2, h3 {
+	<br>
+		font-family: Arial;
+	<br>
+		<em>Property</em><- color: yellow; -><em>Value</em>
+	<br>
+	}
+	<br>
+	<p>This rule indicates that all <strong>h1, h2, h3</strong> elements should be shown in the Arial typeface, in a yellow colour.</p>
+	<p><strong>Properties</strong> indicate the aspects of the element you want to change. For example, colour, font, width, height and border.</p>
+	<p><strong>Values</strong> specify the settings you want to use for the chosen properties. For example, if you want to specify a colour property then the value is the colour you want the text in these elements to be.</p>
+	<br>
+	<p>Here you can see a simple web page that is style using CSS.</p>
+	<p>This example uses two documents: The HTML file (example.html) and a separate CSS file (example.css). The fifth line of HTML uses the <strong>link</strong> element to indicate where the CSS file is located.</p>
+	<p>On the next page, you will see how CSS rules can also be placed in your HTML pages and we will discuss when you might want to do this.</p>
+	<h4>Example:</h4>
+		<em>(load 9b.Example_Intro_CSS index.html)</em>
 </body>
 </html>
