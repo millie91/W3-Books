@@ -81,5 +81,23 @@
 	<p>On the next page, you will see how CSS rules can also be placed in your HTML pages and we will discuss when you might want to do this.</p>
 	<h4>Example:</h4>
 		<em>(load 9b.Example_Intro_CSS index.html)</em>
+	<br>
+	<h3>Using External CSS</h3>
+	<ul>
+		<li><strong>LINK: </strong></li>
+		<p>The <b>link</b> element can be used in an HTML document to tell the browser where to find the CSS file used to style the page.</p>
+		<p>It is an empty element (meaning it does not needa closing tag), and it lives inside the <strong>head</strong> element. It should use three attributes.</p>
+		<ul>
+			<li><strong>HREF: </strong></li>
+			<p>This specifies the path to the CSS file (which is often placed in a folder called <strong>css</strong> or <strong>styles</strong>.</p>
+			<li><strong>TYPE: </strong></li>
+			<p>This attribute specifies the type of document being linked to. The value should be <strong>text/css</strong>.</p>
+			<li><strong>REL: </strong></li>
+			<p>This specifies the relationship between the HTML page and the file it is linked to. The value should be <strong>stylesheet</strong> when linking to a CSS file.</p>
+			<p>An HTML page can use more than one CSS stylesheet. To do this it could have a <strong>link</strong> element for every CSS file it uses. For example, some authors use one CSS file to control the presentation (such as fonts and colours) and a second to control the layout.</p>
+		</ul>
+	</ul>
+	<h4>Example:</h4>
+		<em>(load 9c.Example_External_CSS index.html)</em>
 </body>
 </html>
