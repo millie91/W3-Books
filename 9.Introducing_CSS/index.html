@@ -99,5 +99,22 @@
 	</ul>
 	<h4>Example:</h4>
 		<em>(load 9c.Example_External_CSS index.html)</em>
+	<br>
+	<h3>Using Internal CSS</h3>
+	<ul>
+		<li><strong>STYLE: </strong></li>
+		<p>You can also include CSS rules within an HTML page by placing them inside a <strong>style</strong> element, which usually sits inside the <strong>head</strong> element of the page.</p>
+		<p>The <strong>style</strong> element should use the <b>type</b> attribute to indicate that the styles are specified in CSS. The Value should be <b>text/css</b>.</p>
+		<p>When building a site with more than one page, you should use an external CSS Stylesheet. This:</p>
+		<ul>
+			<li>Allows all pages to use the same style rules (rather than repeating them in each page.)</li>
+			<li>Keeps the content separate from how the page looks.</li>
+			<li>Means you can chcange the styles used across all pages by altering just one file (rather than each individual page).</li>
+		</ul>
+	</ul>
+	<p>In HTML4 and Transitional XHTML, you could also use a <b>style</b> attribute on most of the elements that appear in the body of a page.</p>
+	<p>The CSS rules that appeared within the value of the attribute would only apply to that one element. You should avoid using this attribute in any new site but I mention it here because you may see it used in older code. Here is an example that changes the colour of the text in a single paragraph to red: <em>p style="color:red;"</em></p>
+	<h4>Example:</h4>
+		<em>(load 9d.Example_Internal_CSS index.html)</em>
 </body>
 </html>
