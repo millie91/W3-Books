@@ -177,6 +177,56 @@
 	</ul>
 	<h4>Example:</h4>
 		<em>(load 8g.Audio_Example_Two index.html)</em>
+	<br>
+	<h3>Multiple Audio Sources</h3>
+	<ul>
+		<li><b>SOURCE: </b></li>
+		<p>It is possible to specify more than one audio file using the <b>source</b> element between the opening and closing <b>audio</b> tags (instead of the <b>src</b> attribute on the opening <b>audio</b> tag.)</p>
+		<p>This is important because different browsers support different formats for audio files.</p>
+		<table align="center" border="2" bgcolor="#efefef">
+			<thead>
+				<tr>
+					<th style="background-color: gold; border: solid;">Browser</th>
+					<th style="background-color: gold; border: solid;">MP3</th>
+					<th style="background-color: gold; border: solid;">WAV</th>
+					<th style="background-color: gold; border: solid;">OGG</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th align="center" style="border: solid 1px;">IE</th>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: red;">NO</td>
+					<td align="center" style="border: solid 1px; background-color: red;">NO</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">CHROME</th>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+				</tr>
+				<!-- additional rows as above -->
+				<tr>
+					<th align="center" style="border: solid 1px;">FIREFOX</th>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">SAFARI</th>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: red;">NO</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">OPERA</th>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+					<td align="center" style="border: solid 1px; background-color: green;">YES</td>
+				</tr>
+			</tbody>
+		</table>
+	</ul>
 
 </body>
 </html>
