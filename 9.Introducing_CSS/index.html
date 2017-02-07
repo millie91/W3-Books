@@ -121,5 +121,64 @@
 	<p>These are many different types of CSS selector that allow you to target rules to specific elements in an HTML document.</p>
 	<p>The table on the opposite page introduces the most commonly used CSS selectors.</p>
 	<p>On this page, there is an HTML file to demonstrate which elements there CSS selectors would apply to.</p>
+	<p>CSS selectors are case sensitive, so they must match element names and attribute values exactly.</p>
+	<p>Thesre are some more advanced selectors which allow you to select elements based on attributes and their values.</p>
+	<p>IE 7 was the first version of IE to support the last two selectors in the table (the sibling selectors), so their use is less common than the othe selectors shown here.</p>
+	<h4>Example:</h4>
+		<em>(load 9e.Example_CSS_Selectors index.html)</em>
+	<br>
+	<table align="center" border="2" bgcolor="#efefef">
+			<thead>
+				<tr>
+					<th style="background-color: gold; border: solid;">SELECTOR</th>
+					<th style="background-color: gold; border: solid;">MEANING</th>
+					<th style="background-color: gold; border: solid;">EXAMPLE</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th align="center" style="border: solid 1px;">UNIVERSAL SELECTOR</th>
+					<td align="center" style="border: solid 1px;">Applies to all elements in the document</td>
+					<td align="center" style="border: solid 1px;"><b> * {} </b>Targets all elements on the page</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">TYPE SELECTOR</th>
+					<td align="center" style="border: solid 1px;">Matches element names</td>
+					<td align="center" style="border: solid 1px;"><b>h1, h2, h3</b></td>
+				</tr>
+				<!-- additional rows as above -->
+				<tr>
+					<th align="center" style="border: solid 1px;">CLASS SELECTOR</th>
+					<td align="center" style="border: solid 1px;">Matches an element whose class attribute has a value that mathes the one specified after the period (or full stop) symbol</td>
+					<td align="center" style="border: solid 1px;">
+					<b>.note {}</b> Targets any element whose class attribute has a value of note. <b>p.note {}</b> Targets only <b>p</b> element whose class attribute has a value of note</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">ID SELECTOR</th>
+					<td align="center" style="border: solid 1px;">Matches an element whose id attribute has a value that mathes the one specified after the pound or hash symbol</td>
+					<td align="center" style="border: solid 1px;"><b>#introduction</b> Targets the element whose id attribute has a value of introduction</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">CHILD SELECTOR</th>
+					<td align="center" style="border: solid 1px;">Matches an element that is a descendent of another specified element (not just a direct child of that element)</td>
+					<td align="center" style="border: solid 1px;"><b>li>a {}</b> Targets any a elements that are children of an li element (but not other a elements in the page)</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">DESCENDANT SELECTOR</th>
+					<td align="center" style="border: solid 1px;">Matches an element that is a descendent of another specified element (not just a direct child of that element)</td>
+					<td align="center" style="border: solid 1px;"><b>p a {}</b> Targets any a elements that sit inside a p element, even if there are other elements nested between them</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">ADJACENT SIBLING SELECTOR</th>
+					<td align="center" style="border: solid 1px;">Matches an element that is the next sibling of another</td>
+					<td align="center" style="border: solid 1px;"><b>h1+p {}</b> Targets the first p element after any h1 element (but not other p elements)</td>
+				</tr>
+				<tr>
+					<th align="center" style="border: solid 1px;">GENERAL SIBLING SELECTOR</th>
+					<td align="center" style="border: solid 1px;">Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+					<td align="center" style="border: solid 1px;"><b>h1~p {}</b> If you had two p elements that are siblings of an h1 element, this rule would apply to both</td>
+				</tr>
+			</tbody>
+		</table>
 </body>
 </html>
