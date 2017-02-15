@@ -180,5 +180,22 @@
 				</tr>
 			</tbody>
 		</table>
+		<br>
+		<h3>How CSS Rules Cascade</h3>
+		<p>If there are two or more rules that apply to the same element, it is important to understand which will take precedence.</p>
+		<ul>
+			<li><strong>LAST RULE: </strong></li>
+			<p>If the two selectors are identical, the latter of the two will take precedence. Here you can see the second <em>i</em> selector takes precedence over the first.</p>
+			<li><strong>SPECIFICITY: </strong></li>
+			<p>If one selector is more specific than the others, the more specific rule will take precedence over more general nes. In this example:</p>
+			<ul>
+				<li><strong>h1</strong> is more specific than <strong>*</strong></li>
+				<li><strong>p b</strong> is more specific than <strong>p</strong></li>
+				<li><strong>p#intro</strong> is more specific than <strong>p</strong></li>
+			</ul>
+			<li><strong>IMPORTANT: </strong></li>
+			<p>You can add <strong>!important</strong> after any property value to indicate that it should be considered more important than other rules that apply to the same element.</p>
+			<p>Understanding how CSS rules cascade means you can write simpler style sheets because you can create generic rules that apply to most elements and then override the properties of individual elements that need to appear differently.</p>
+		</ul>
 </body>
 </html>
