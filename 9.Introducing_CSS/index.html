@@ -199,5 +199,13 @@
 		</ul>
 		<h4>Example:</h4>
 		<em>(load 9f.How CSS Rules Cascade)</em>
+		<br>
+		<h3>Inheritance</h3>
+		<p>If you specify the <b>font-family</b> or <b>color</b> properties on the <b>body</b> element, they will apply to most child elements. This is because the value of the font-family property is inherited by child elements. It saves you from having to apply these properties to as many elements (and results in simpler style sheets).</p>
+		<p>You can compare this with the <b>background-color</b> or <b>border</b> propertiesl they are <b>not inherited</b> by child elements. If these were inherited by all child elements. If these were inherited by all child elements then the page could look quite messy.</p>
+		<p>You can force a lot of properties to inherit values from their parent elements by using <b>inherit</b> for the value of the properties.</p>
+		<p>In this example, the <b>div</b> element with a class called page inherits the padding size from the CSS rule that applies to the <b>body</b> element.</p>
+		<em>(load 9g.Inheritance)</em>
+
 </body>
 </html>
